@@ -1,4 +1,16 @@
-<div>
-	<h1>Categories Index Page</h1>
-	<a href="/">Home</a>
+<script>
+	import ShopCard from '$lib/components/ShopCard.svelte';
+
+	export let data;
+</script>
+
+<div class="col-span-7 grid grid-cols-3 gap-6 mt-6 mb-6">
+	{#if data.products.length > 0}
+		{#each data.products as product}
+			<ShopCard id={product.id} name={product.name} price={product.price} image={product.image}
+			></ShopCard>
+		{/each}
+	{:else}
+		<p class="text-center text-neutral-400 text-2xl col-span-3 mt-12">No products found!</p>
+	{/if}
 </div>
