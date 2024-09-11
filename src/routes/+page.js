@@ -3,7 +3,7 @@ export async function load({ fetch }) {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
-            "Accept": "application/json"
+            Accept: "application/json"
         }
     })
 

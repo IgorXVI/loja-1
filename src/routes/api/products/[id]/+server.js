@@ -9,24 +9,31 @@ export async function GET({ params }) {
             }
         })
 
-        return new Response(JSON.stringify({
-            product
-        }), {
-            status: 200,
-            headers: {
-                "Content-Type": "application/json"
+        return new Response(
+            JSON.stringify({
+                product
+            }),
+            {
+                status: 200,
+                headers: {
+                    "Content-Type": "application/json"
+                }
             }
-        })
+        )
     } catch (error) {
         console.log(error)
-        return new Response(JSON.stringify({
-            message: "Something went wrong while trying to fetch product by id!",
-            error: error.message
-        }), {
-            status: 500,
-            headers: {
-                "Content-Type": "application/json"
+        return new Response(
+            JSON.stringify({
+                message:
+                    "Something went wrong while trying to fetch product by id!",
+                error: error.message
+            }),
+            {
+                status: 500,
+                headers: {
+                    "Content-Type": "application/json"
+                }
             }
-        })
+        )
     }
 }
