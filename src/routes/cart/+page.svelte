@@ -35,7 +35,7 @@
     }
 </script>
 
-<div class="text-white px-96 py-12">
+<div class="text-white p-3">
     <div class="flex justify-between items-center">
         <h1 class="text-4xl font-bold">Cart</h1>
         <a

@@ -17,13 +17,13 @@
 
 {#if product}
     <div
-        class="text-white group grid grid-cols-3 gap-6 mt-6 bg-black rounded-md h-[720px] border-neutral-400 p-10"
+        class="text-white group grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 bg-black rounded-md h-[720px] border-neutral-400 p-10"
     >
-        <div class="col-span-2 h-full flex items-center justify-center">
+        <div class="md:col-span-2 h-full flex items-center justify-center">
             <img
                 src={product.image}
                 alt={product.name}
-                class="h-[500px] group-hover:h-[620px] duration-500"
+                class="h-auto md:h-[500px]"
             />
         </div>
 

@@ -1,4 +1,4 @@
-<div class="py-32 px-96 flex flex-col items-center space-y-6">
+<div class="py-32 flex flex-col items-center space-y-6">
     <p class="text-2xl text-center font-bold text-red-500">
         The payment was canceled
     </p>

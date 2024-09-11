@@ -4,8 +4,8 @@
     export let data
 </script>
 
-<div class="grid grid-cols-8 gap-6">
-    <div>
+<div class="grid grid-cols-4 md:grid-cols-8 gap-6 p-3">
+    <div class="col-span-1">
         <p class="text-neutral-400 uppercase text-xs font-bold">Categories</p>
         <ul class="text-white mt-2.5 space-y-1">
             <CategoryItem
@@ -22,5 +22,7 @@
             {/each}
         </ul>
     </div>
-    <slot></slot>
+    <div class="col-span-3 md:col-span-7">
+        <slot></slot>
+    </div>
 </div>
